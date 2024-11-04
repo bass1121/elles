@@ -1,0 +1,50 @@
+.playlist-wrapper {
+  float: right;
+  width: 20%;
+  height: 95vh;
+  overflow: scroll;
+  border: 2px solid black;
+  background: mediumslateblue;
+  margin: 10px 10px;
+
+  h2 {
+    text-align: center;
+    color: #282828;
+    font-size: xx-large;
+    margin: 10px;
+    font-weight: 900;
+    padding: 2px;
+  }
+
+  .video-container {
+    
+    .video_list {
+      list-style-type: none;
+      padding: 10px;
+
+      .video_card {
+        background: ghostwhite;
+        text-align: center;
+        margin: 5px;
+        border: outset 5px;
+        
+        a {
+          text-decoration: none;
+
+          .video {
+            img {
+              border: 2px slateblue;
+              width: 220px;
+              height: 200px;
+            }
+          }
+
+          h3 {
+            font-size: 1.2em;
+            color: slateblue;
+          }
+        }
+      }
+    }
+  }
+}

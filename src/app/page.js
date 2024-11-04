@@ -4,14 +4,13 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className="">
-      <main className="">
-        <div className='video-wrapper'>
-          <div>Youtube Uploads</div>
+    <div>
+      <main>
+        <div className='home-wrapper'>
           <GetPlaylist />
         </div>
       </main>
-      <footer className="">
+      <footer>
       </footer>
     </div>
   );
