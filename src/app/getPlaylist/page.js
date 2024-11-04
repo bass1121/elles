@@ -1,14 +1,15 @@
 import styles from "./playlist.css"
 
 export default async function getPlaylist() {
-  const res = await fetch(`${process.env.API_URL}?part=snippet&playlistId=PLPuOOczjABq4slNtYFPA2Jp0G5tw7ccPq&key=${process.env.API_KEY}&channelId=${process.env.CHANNEL_ID}&pageToken&maxResults=20`);
+  const res = await fetch(`${process.env.API_URL}?part=snippet&playlistId=UU-HvkbTWtG_AC0d-PjQ-9YA&key=${process.env.API_KEY}&channelId=${process.env.CHANNEL_ID}&pageToken&maxResults=20`);
   const data = await res.json();
   console.log("data", data);
   
   return (
+    console.log("data", data),
     <div className="playlist-wrapper">
       <h2>Recent Youtube Uploads</h2>
-      <div className="video-container">
+       <div className="video-container">
         <ul className="video_list">
           {data.items.map((item) => {
             const { id, snippet = {} } = item;
@@ -26,7 +27,7 @@ export default async function getPlaylist() {
             ) 
           })}
         </ul>        
-      </div>
+      </div> 
     </div>
   );
 }

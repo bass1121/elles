@@ -6,6 +6,20 @@ export default function Home() {
   return (
     <div>
       <main>
+        <nav className="navbar">
+          <div className="nav-link-wrapper">
+            <p>link</p>
+          </div>
+          <div className="nav-link-wrapper">
+            <p>link</p>
+          </div>
+          <div className="nav-link-wrapper">
+            <p>link</p>
+          </div>
+          <div className="nav-link-wrapper">
+            <p>link</p>
+          </div>
+        </nav>
         <div className='home-wrapper'>
           <GetPlaylist />
         </div>
