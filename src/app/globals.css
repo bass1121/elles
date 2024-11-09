@@ -1,8 +1,50 @@
 body {
   margin: 0px;
+  min-height: 100vh;
+  width: 100%;
 
   .navbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: slateblue;
+    height: auto;
+    border-bottom: 4px solid darkslateblue;
+
+    
+    .nav-link-container {
+      align-items: center;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+     
+      .nav-link {
+        text-align: center;
+        font-size: 1.1em; 
+        
+        p {
+          margin: 0px;
+          padding: 5px;
+          border: 2px solid cornsilk;
+          border-radius: 5px;
+          color: slateblue;
+          background: lavender;
+        }
+
+        p:hover {
+          transition: color .3s ease-in-out, scale .3s ease-in-out;
+          scale: 110%;
+          color: lightpink;
+          cursor: pointer;
+        }
+      }
+  
+      .logo {
+        width: 250px;
+        height: 60px;
+      }
+    }
+
   }
 }

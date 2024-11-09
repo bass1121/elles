@@ -1,10 +1,10 @@
 .playlist-wrapper {
   float: right;
   width: 20%;
-  height: 95vh;
+  height: 80vh;
   overflow: scroll;
-  background: mediumslateblue;
-  margin: 10px 10px;
+  background: slateblue;
+  margin: 10px 0px;
 
   h2 {
     text-align: center;

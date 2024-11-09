@@ -2,8 +2,8 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "Youtube API",
-  description: "Experimenting and playing around with youtube API",
+  title: "Elle Bee",
+  description: "",
 };
 
 export default function RootLayout({ children }) {
