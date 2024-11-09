@@ -1,0 +1,10 @@
+.footer-div {
+  margin-bottom: 10px;
+  border-top: 3px solid darkslateblue;
+  border-right: 3px solid darkslateblue;
+  border-bottom: 3px solid darkslateblue;
+  border-radius: 10px;
+  background: slateblue;
+  width:  30vw;
+  
+}

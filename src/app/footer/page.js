@@ -1,7 +1,10 @@
 import styles from "./footer.css"
+import {AiFillGithub, AiFillLinkedin, AiFillFacebook} from 'react-icons/ai';
 
 export default function Footer() {
   return (
-    <h1 className="social-links">Elle's Links:</h1>
+    <div className="footer-div">
+      
+    </div>
   );
 }
