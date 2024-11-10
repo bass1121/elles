@@ -6,6 +6,10 @@ body {
   .main-div {
     min-height: 100vh;
     position: relative;
+    background-image: url("../images/fadedElle.png");
+    background-size: 60vw;
+    background-repeat: no-repeat;
+    background-position: right;
   }
 
   .navbar {
@@ -46,8 +50,7 @@ body {
       }
   
       .logo {
-        width: 250px;
-        height: 60px;
+        height: 90px;
       }
     }
   }
