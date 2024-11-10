@@ -1,4 +1,6 @@
 import "./globals.css";
+import "./footer/footer.css";
+import "./styles.css";
 
 export const metadata = {
   title: "Elle Bee",

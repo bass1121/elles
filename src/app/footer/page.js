@@ -1,5 +1,4 @@
-import styles from "./footer.css"
-import {AiFillYoutube, AiFillFacebook, AiFillTikTok} from 'react-icons/ai';
+import { AiFillYoutube, AiFillFacebook, AiFillTikTok, AiFillInstagram } from 'react-icons/ai';
 import { BsTwitterX } from 'react-icons/bs';
 
 export default function Footer() {
@@ -17,6 +16,9 @@ export default function Footer() {
       </a>
       <a href="" className="footer-link">
         <AiFillTikTok className="icon"/>
+      </a>
+      <a href="" className="footer-link">
+        <AiFillInstagram className="icon"/>
       </a>
     </div>
   );

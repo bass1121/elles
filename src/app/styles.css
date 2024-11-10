@@ -1,0 +1,10 @@
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.home-text-wrapper {
+  width: 70vw;
+  text-align: center;
+}

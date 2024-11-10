@@ -1,8 +1,8 @@
 import Image from "next/image";
 import GetPlaylist from "./getPlaylist/page.js";
-import Footer from "./footer/page.js"
+import Footer from "./footer/page.js";
 
-import { Logo, Homepic } from "./helpers/imageExport.js"
+import { Logo, Homepic } from "./helpers/imageExport.js";
 
 
 export default function Home() {
@@ -26,7 +26,10 @@ export default function Home() {
           </div>
         </nav>
         <div className='home-wrapper'>
-          {/* <Image src={Homepic} /> */}
+          <div className="home-text-wrapper">
+            <h1>A Community For Trending Topics and Entertainment News</h1>
+            
+          </div>
           <GetPlaylist />
         </div>
         <Footer />
