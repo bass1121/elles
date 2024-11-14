@@ -7,7 +7,7 @@ export default async function getPlaylist() {
   
   return (
     <div className="playlist-wrapper">
-      <h2>Recent Youtube Uploads</h2>
+      <h2>Elle's Youtube:</h2>
        <div className="video-container">
         <ul className="video_list">
           {data.items.map((item) => {

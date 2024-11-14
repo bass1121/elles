@@ -8,28 +8,9 @@ import { Logo } from "./helpers/imageExport.js";
 export default function Home() {
   return (
     <div className="main-div">
-        <nav className="navbar">
-          <div className="nav-link-container">
-            <div className="nav-link">
-              <a>Login</a>
-            </div>
-            <div className="nav-link">
-              <a>Create Account</a>
-            </div>
-            <div className="nav-link">
-              <a>Merchandise</a>
-            </div>
-            <div className="nav-link">
-              <a>About Elle</a>
-            </div>
-            <div className="nav-link">
-              <a>Elle's Tiktok</a>
-            </div>
-          </div>
-        </nav>
         <div className='home-wrapper'>
           <div className="home-text-wrapper">
-            <Image src={Logo} className="logo" alt="" />
+            <Image src={Logo} className="logo" alt="Logo" /> 
             <h1>A Community For Trending Topics and Entertainment News</h1>
             <p>
               Elle Bee is a content creator that delivers daily content on entertainment news, trending topics and true crime. Her community is an open community
@@ -38,8 +19,7 @@ export default function Home() {
             </p>           
           </div>
           <GetPlaylist />
-        </div>
-        <Footer />
+        </div>        
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { AiFillYoutube, AiFillFacebook, AiFillTikTok, AiFillInstagram } from 'react-icons/ai';
 import { BsTwitterX } from 'react-icons/bs';
+import "./footer.css";
 
 export default function Footer() {
   return (

@@ -1,24 +1,25 @@
 .playlist-wrapper {
   float: right;
   width: 20%;
-  height: 80vh;
+  min-height: 100vh;
   overflow: scroll;
-  background: slateblue;
+  background: transparent;
 
   h2 {
     text-align: center;
-    color: #282828;
+    color: white;
+    background: #FF0000;
+    border: 2px solid black;
     font-size: xx-large;
-    margin: 10px;
     font-weight: 900;
     padding: 2px;
+    margin: 5px;
   }
 
   .video-container {
     
     .video_list {
       list-style-type: none;
-      padding: 10px;
 
       .video_card {
         background: ghostwhite;
@@ -32,8 +33,7 @@
           .video {
             img {
               border: 2px slateblue;
-              width: 220px;
-              height: 200px;
+              width: 100%;
             }
           }
 
