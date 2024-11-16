@@ -1,5 +1,9 @@
 .loginPage-wrapper {
+  display: flex;
+  justify-content: center;
+
   h1 {
+    font-size: 2.2em;
     font-weight: bold;
     margin: 0;
   }
@@ -29,9 +33,9 @@
   
   button {
     border-radius: 20px;
-    border: 1px solid #FF4B2B;
-    background-color: #FF4B2B;
-    color: #FFFFFF;
+    border: 1px solid darkslateblue;
+    background-color: lavender;
+    color: darkslateblue;
     font-size: 12px;
     font-weight: bold;
     padding: 12px 45px;
@@ -49,7 +53,6 @@
   }
   
   button.ghost {
-    background-color: transparent;
     border-color: #FFFFFF;
   }
   
@@ -73,15 +76,16 @@
   }
   
   .container {
-    background-color: #fff;
+    margin-top: 15vh;
+    background-color: transparent;
     border-radius: 10px;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-        0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
     position: relative;
     overflow: hidden;
-    width: 768px;
+    width: 60vw;
     max-width: 100%;
-    min-height: 480px;
+    height: 60vh;
   }
   
   .form-container {
@@ -131,7 +135,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    width: 50%;
+    width: 58%;
     height: 100%;
     overflow: hidden;
     transition: transform 0.6s ease-in-out;
@@ -143,9 +147,9 @@
   }
   
   .overlay {
-    background: #FF416C;
-    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    background: darkslateblue;
+    background: -webkit-linear-gradient(to right, darkslateblue, slateblue);
+    background: linear-gradient(to right, slateblue, darkslateblue);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -154,7 +158,7 @@
     left: -100%;
     height: 100%;
     width: 200%;
-      transform: translateX(0);
+    transform: translateX(0);
     transition: transform 0.6s ease-in-out;
   }
   
@@ -207,6 +211,14 @@
     margin: 0 5px;
     height: 40px;
     width: 40px;
+  }
+
+  .arrow-icon {
+    font-size: 2.5em;
+  }
+  .logo {
+    width: 70%;
+    height: auto;
   }
 }
 
