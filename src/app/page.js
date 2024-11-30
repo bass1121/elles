@@ -1,7 +1,5 @@
 import Image from "next/image";
 import GetPlaylist from "./getPlaylist/page.js";
-import Footer from "./footer/page.js";
-
 import { Logo } from "./helpers/imageExport.js";
 
 
@@ -18,7 +16,7 @@ export default function Home() {
               opinion and/or start a blog of their own.
             </p>           
           </div>
-          <GetPlaylist />
+          {/* <GetPlaylist /> */}
         </div>        
     </div>
   );

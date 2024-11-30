@@ -8,7 +8,7 @@ export default function Navbar() {
             <a href="/login">Login</a>
           </div>
           <div className="nav-link">
-            <a>Create Account</a>
+            <a href="/">Home</a>
           </div>
           <div className="nav-link">
             <a>Merchandise</a>

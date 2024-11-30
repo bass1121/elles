@@ -1,5 +1,4 @@
 import "./globals.css";
-
 import "./styles.css";
 import Navbar from "./navbar/page.js";
 import Footer from "./footer/page.js"
