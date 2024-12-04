@@ -65,13 +65,13 @@ export default function Login() {
               <Image src={Logo} className="logo" alt="logo" priority/>
               <h1>Hello, Friend</h1>
               <p>Already have an account?</p>
-              <button className="ghost" id="signIn"><BiSolidRightArrowSquare className='arrow-icon'/></button>
+              <button className="ghost svg-ghost" id="signIn"><BiSolidRightArrowSquare className='arrow-icon'/></button>
             </div>
             <div className="overlay-panel overlay-right">
               <Image src={Logo} className="logo" alt="logo" priority/>
               <h1>Welcome Back!</h1>
               <p>Need to sign up?</p>
-              <button className="ghost" id="signUp"><BiSolidLeftArrowSquare className='arrow-icon' /></button>
+              <button className="ghost svg-ghost" id="signUp"><BiSolidLeftArrowSquare className='arrow-icon' /></button>
             </div>
           </div>
         </div>
