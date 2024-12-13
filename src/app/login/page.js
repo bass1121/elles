@@ -4,7 +4,8 @@ import Image from "next/image";
 import "./login.css";
 import { BiSolidLeftArrowSquare } from "react-icons/bi";
 import { BiSolidRightArrowSquare } from "react-icons/bi";
-import { Logo } from '../helpers/imageExport';
+import { Logo } from '../../helpers/imageExport';
+
 
 export default function Login() {
   useEffect(() => {

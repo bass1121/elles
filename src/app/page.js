@@ -1,6 +1,6 @@
 import Image from "next/image";
 import GetPlaylist from "./getPlaylist/page.js";
-import { Logo } from "./helpers/imageExport.js";
+import { Logo } from "../helpers/imageExport.js";
 
 
 export default function Home() {
