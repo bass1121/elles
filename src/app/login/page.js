@@ -2,9 +2,9 @@
 import { useEffect, useState } from 'react';
 import Image from "next/image";
 import "./login.css";
-import { BiSolidLeftArrowSquare } from "react-icons/bi";
-import { BiSolidRightArrowSquare } from "react-icons/bi";
+import { BiSolidLeftArrowSquare, BiSolidRightArrowSquare } from "react-icons/bi";
 import { Logo } from '../../helpers/imageExport';
+import UsernameValidation from '@/helpers/checkUsername';
 
 
 export default function Login() {
@@ -33,6 +33,15 @@ export default function Login() {
 
   const [ loginEmail, setLoginEmail ] = useState('');
   const [ loginPassword, setLoginPassword ] = useState('');
+
+  // Database query
+  
+  // Register Account Logic
+  // if (registerUsername.length > 4 && registerUsername.length <= 30) {
+  //   console.log("Success")
+  // } else {
+  //   console.log("failed")
+  // };
 
   return( 
     <div className="loginPage-wrapper">

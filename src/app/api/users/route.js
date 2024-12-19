@@ -11,5 +11,8 @@ export async function GET(req, res) {
     console.log(error)
     return NextResponse.json({error: error.message})
   }
-  
+}
+
+export async function POST(req, res) {
+
 }
