@@ -1,10 +1,12 @@
-'use client'
+'use client';
+
 import { useEffect, useState } from 'react';
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import "./login.css";
 import { BiSolidLeftArrowSquare, BiSolidRightArrowSquare } from "react-icons/bi";
 import { Logo } from '../../helpers/imageExport';
-import UsernameValidation from '@/helpers/checkUsername';
+import UsernameValidation from '@/helpers/checkUsername'; 
 
 
 export default function Login() {
@@ -26,16 +28,25 @@ export default function Login() {
     }
   }, []);
 
-  const [ registerUsername, setRegisterUsername ] = useState('');
-  const [ registerEmail, setRegisterEmail ] = useState('');
-  const [ registerPassword, setRegisterPassword ] = useState('');
-  const [ confirmPassword, setConfirmPassword ] = useState('');
+  const [ user, setUser ] = useState({
+    email: "",
+    password: "",
+    username: "",
+  });
 
-  const [ loginEmail, setLoginEmail ] = useState('');
-  const [ loginPassword, setLoginPassword ] = useState('');
+  const [ loginUser, setLoginUser ] = useState({
+    email: "",
+    password: "",
+  })
 
-  // Database query
-  
+  const onSignup = async () => {
+  };
+
+  const onLogin = async () => {
+
+  };
+  // Validation Code
+
   // Register Account Logic
   // if (registerUsername.length > 4 && registerUsername.length <= 30) {
   //   console.log("Success")
@@ -50,21 +61,22 @@ export default function Login() {
           <form action="#" id="sign-up-form">
             <h1>Register Account</h1>
             <p>Must use the same email that you use for Youtube Membership</p>
-            <input id="registerUsername" type="text" placeholder="Username" onChange={e => setRegisterUsername(e.target.value)}/>
-            <input id="registerEmail" type="email" placeholder="Email" onChange={e => setRegisterEmail(e.target.value)}/>
-            <input id="registerPassword" type="password" placeholder="Password" onChange={e => setRegisterPassword(e.target.value)} />
+            <input id="registerUsername" type="text" placeholder="Username" value={user.username} onChange={e => setUser({...user, username: e.target.value})}/>
+            <input id="registerEmail" type="email" placeholder="Email" value={user.email} onChange={e => setUser({...user, email: e.target.value})}/>
+            <input id="registerPassword" type="password" placeholder="Password" value={user.password} onChange={e => setUser({...user, password: e.target.value})} />
             <input id="confirmPassword" type="password" placeholder="Confirm Password" onChange={e => setConfirmPassword(e.target.value)} />
-            <button>Register</button>
+     
+            <button onclick={onSignup}>Register</button>
           </form>
         </div>
     
         <div className="form-container sign-in-container">
           <form action="#" id="sign-in-form">
             <h1>Sign in</h1>
-            <input id="sign-in-email" type="email" placeholder="Email" onChange={e => setLoginEmail(e.target.value)} />
-            <input id="sign-in-password" type="password" placeholder="Password" onChange={e => setLoginPassword(e.target.value)} />
+            <input id="sign-in-email" type="email" placeholder="Email" value={loginUser.email} onChange={e => setLoginUser({...loginUser, email: e.target.value})} />
+            <input id="sign-in-password" type="password" placeholder="Password" value={loginUser.password} onChange={e => setLoginUser({...loginUser, password: e.target.value})} />
             <a href="#">Forgot your password?</a>
-            <button>Sign In</button>
+            <button onclick={onLogin}>Sign In</button>
           </form>
         </div>
     
